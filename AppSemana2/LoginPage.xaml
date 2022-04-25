@@ -23,8 +23,8 @@
 
             <Label Grid.Row="0" Grid.Column="0" Text="Usuario:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
             <Entry Grid.Row="0" Grid.Column="1" x:Name="txtUsuario" x:Uid="txtUsuario" Placeholder="Usuario"></Entry>
-            <Label Grid.Row="1" Grid.Column="0" Text="Contraseña:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
-            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtPassword" x:Uid="txtPassword" Placeholder="Contraseña" IsPassword="True"></Entry>
+            <Label Grid.Row="1" Grid.Column="0" Text="Clave:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtPassword" x:Uid="txtPassword" Placeholder="Clave" IsPassword="True"></Entry>
             <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnIngresar" x:Uid="btnIngresar" Clicked="btnIngresar_Clicked" Text="Ingresar" BackgroundColor="#21A765" TextColor="White"></Button>
 
 

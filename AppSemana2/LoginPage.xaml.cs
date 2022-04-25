@@ -20,7 +20,7 @@ namespace AppSemana2
             }
             else
             {
-                await DisplayAlert("MENSAJE", "Usuario o Contraseña incorrecto", "ACEPTAR");
+                await DisplayAlert("MENSAJE", "Usuario o Clave incorrecto", "ACEPTAR");
             }
         }
     }
