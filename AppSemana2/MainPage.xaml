@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSemana2.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#15497B" Padding="24" CornerRadius="0">
+                <Label Text="U.Israel Calificaciones App" HorizontalTextAlignment="Center" TextColor="White" FontSize="Title"/>
+
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Usuario:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" BackgroundColor="#2267AA" TextColor="White"></Label>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblUser" x:Uid="lblUser"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" BackgroundColor="#21A765" TextColor="White"></Label>
+
+                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Text="PRIMER PARCIAL" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" BackgroundColor="#2267AA" TextColor="White"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="Nota de seguimiento:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="3" Grid.Column="0" Text="Examen:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="4" Grid.Column="0" Text="Nota primer parcial:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="SEGUNDO PARCIAL" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" BackgroundColor="#2267AA" TextColor="White"></Label>
+                <Label Grid.Row="6" Grid.Column="0" Text="Nota de seguimiento:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="7" Grid.Column="0" Text="Examen:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="8" Grid.Column="0" Text="Nota segundo parcial:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="9" Grid.Column="0" Text="Nota final:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="10" Grid.Column="0" Text="Estado:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtSeguimientoUno" x:Uid="txtSeguimientoUno" Placeholder="Ingrese nota" Keyboard="Numeric" TextChanged="txtSeguimientoUno_TextChanged"></Entry>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtExamenUno" x:Uid="txtExamenUno" Placeholder="Ingrese nota" Keyboard="Numeric" TextChanged="txtExamenUno_TextChanged"></Entry>
+                <Label Grid.Row="4" Grid.Column="1" x:Name="lblPromedioUno" x:Uid="lblPromedioUno" Text="0.00" TextColor="Blue" FontAttributes="Bold" VerticalTextAlignment="Center" FontSize="Medium"></Label>
+                <Entry Grid.Row="6" Grid.Column="1" x:Name="txtSeguimientoDos" x:Uid="txtSeguimientoDos" Placeholder="Ingrese nota" Keyboard="Numeric" TextChanged="txtSeguimientoDos_TextChanged"></Entry>
+                <Entry Grid.Row="7" Grid.Column="1" x:Name="txtExamenDos" x:Uid="txtExamenDos" Placeholder="Ingrese nota" Keyboard="Numeric" TextChanged="txtExamenDos_TextChanged"></Entry>
+                <Label Grid.Row="8" Grid.Column="1" x:Name="lblPromedioDos" x:Uid="lblPromedioDos" Text="0.00" TextColor="Blue" FontAttributes="Bold" VerticalTextAlignment="Center" FontSize="Medium"></Label>
+                <Label Grid.Row="9" Grid.Column="1" x:Name="lblNotaFinal" x:Uid="lblNotaFinal" Text="0.00" TextColor="Blue" FontAttributes="Bold" VerticalTextAlignment="Center" FontSize="Medium"></Label>
+                <Label Grid.Row="10" Grid.Column="1" x:Name="lblEstado" x:Uid="lblEstado" Text="Presione el boton PROCESAR." TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" FontSize="Medium"></Label>
+                <Button Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnProcesar" x:Uid="btnProcesar" Text="Procesar" Clicked="btnProcesar_Clicked" BackgroundColor="#21A765" TextColor="White"></Button>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

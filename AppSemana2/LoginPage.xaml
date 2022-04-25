@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppSemana2.LoginPage">
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#15497B" Padding="24" CornerRadius="0">
+                <Label Text="U.Israel Calificaciones App" HorizontalTextAlignment="Center" TextColor="White" FontSize="Title"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Usuario:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+            <Entry Grid.Row="0" Grid.Column="1" x:Name="txtUsuario" x:Uid="txtUsuario" Placeholder="Usuario"></Entry>
+            <Label Grid.Row="1" Grid.Column="0" Text="Contraseña:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtPassword" x:Uid="txtPassword" Placeholder="Contraseña" IsPassword="True"></Entry>
+            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnIngresar" x:Uid="btnIngresar" Clicked="btnIngresar_Clicked" Text="Ingresar" BackgroundColor="#21A765" TextColor="White"></Button>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
